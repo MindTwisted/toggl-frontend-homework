@@ -12,6 +12,7 @@ export const UploadFiles = ({ onFilesUploaded }) => {
         .map((result) => result.value);
 
       onFilesUploaded(files);
+      e.target.value = '';
     }
   };
 
